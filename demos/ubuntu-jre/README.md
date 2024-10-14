@@ -1,3 +1,7 @@
+# Description
+
+This sample demonstrates deploying [Spring Petclinic](https://github.com/spring-projects/spring-petclinic) in a chiselled container.
+
 # Building the sample
 
 1. ``git submodule init && git submodule update --recursive``
@@ -7,7 +11,6 @@
 # Running the sample
 
 ``docker run -p 8080:8080 --tmpfs /tmp:exec petclinic-chiselled-jib``
-
 
 # Building using other base containers
 
