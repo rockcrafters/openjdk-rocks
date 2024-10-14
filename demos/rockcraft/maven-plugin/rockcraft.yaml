@@ -17,7 +17,7 @@ services:
   test:
     override: replace
     summary: Service summary
-    command: /usr/lib/jvm/java-21-openjdk-${CRAFT_ARCH_BUILD_FOR}/bin/java -jar /jar/spring-petclinic-3.3.0-SNAPSHOT.jar
+    command: /usr/bin/java -jar /jar/spring-petclinic-3.3.0-SNAPSHOT.jar
     startup: enabled
 
 parts:
