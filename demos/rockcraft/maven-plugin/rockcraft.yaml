@@ -1,0 +1,39 @@
+name: spring-petclinic-jlink-plugin
+version: 0.0.1
+summary: Basic Spring Petclinic
+description: |
+  This image is Spring Petclinic sample
+  using openjdk-17-headless slices
+
+base: bare
+build-base: ubuntu@24.04
+
+run-user: _daemon_
+
+platforms:
+  amd64:
+
+services:
+  test:
+    override: replace
+    summary: Service summary
+    command: /usr/lib/jvm/java-21-openjdk-${CRAFT_ARCH_BUILD_FOR}/bin/java -jar /jar/spring-petclinic-3.3.0-SNAPSHOT.jar
+    startup: enabled
+
+parts:
+  application:
+    plugin: maven
+    source: https://github.com/spring-projects/spring-petclinic.git
+    source-type: git
+    build-packages:
+      - openjdk-21-jdk-headless
+      - maven
+
+  runtime:
+    plugin: jlink
+    jlink-java-version: 21
+    after:
+      - application
+    stage-packages:
+      - openjdk-21-jre-headless_standard
+      - base-files_base
