@@ -1,4 +1,4 @@
-# Description
+# Introduction
 
 This sample demonstrates deploying [Spring Petclinic](https://github.com/spring-projects/spring-petclinic) in a chiselled container.
 

@@ -1,4 +1,4 @@
-# Description
+# Introduction
 
 This directory contains demos of Java rockcraft plugins and extensions. The demos build [Spring Petclinic] rock containers (https://github.com/spring-projects/spring-petclinic).
 
