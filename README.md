@@ -9,7 +9,7 @@ This repository contains demos of Ubuntu OpenJDK-based ROCK containers.
 
 ## Try building the [rock](https://github.com/rockcrafters#what-is-a-rock) images for Java Applications
 
-The steps below will install all prerequisites to run samples or try building rocks for your application on Ubuntu system.
+The steps below describe installing all the prerequisites to run samples on the Ubuntu system.
 
 ### Step 1: install rockcraft
 
@@ -25,7 +25,7 @@ snapcraft
 snap install --dangerous --classic *.snap
 ```
 
-### Step 2: install Gradle plugin
+### Step 2: install the Gradle plugin
 
 ```
 git clone https://github.com/rockcrafters/java-rockcraft-plugins
