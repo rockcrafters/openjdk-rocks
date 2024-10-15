@@ -7,7 +7,7 @@ This repository contains demos of Ubuntu OpenJDK-based ROCK containers.
 * [demos/ubuntu-jre](demos/ubuntu-jre/) demonstrate deploying Java application using [ubuntu/jre](https://hub.docker.com/r/ubuntu/jre) image.
 
 
-## Try building the [rock](https://github.com/rockcrafters#what-is-a-rock) images for Java Applications
+## Try building the [rock](https://github.com/rockcrafters#what-is-a-rock) images for Java applications
 
 The steps below describe installing all the prerequisites to run samples on the Ubuntu system.
 
