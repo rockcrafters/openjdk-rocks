@@ -1,6 +1,6 @@
 # How to package a rock using Spring Framework rockcraft extension
 
-1. Install [rockcraft](../rockcraft#install-rockcraft).
+1. Install [rockcraft](https://github.com/rockcrafters/openjdk-rocks/tree/main/demos/rockcraft#install-rockcraft).
 2. Clone or create a Spring Boot project: `git clone https://github.com/spring-projects/spring-petclinic.git`.
 3. Enter project directory: `cd spring-petclinic`
 4. Initialize rockcraft.yaml: `rockcraft init --profile spring-boot-framework`

@@ -1,6 +1,6 @@
 # Introduction
 
-This directory contains demos of Java rockcraft plugins and extensions. The demos build [Spring Petclinic] rock containers (https://github.com/spring-projects/spring-petclinic).
+This directory contains demos of Java rockcraft plugins and extensions. The demos build [Spring Petclinic](https://github.com/spring-projects/spring-petclinic) rock containers.
 
 * [basic](basic) builds without use of plugins. Use chisel slices to install Java runtime.
 * [jlink](jlink) uses the Java jlink tool to create Java runtime.
