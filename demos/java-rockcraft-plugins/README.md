@@ -17,10 +17,10 @@ cat << EOF > ~/.gradle/init.d/rockcraft-plugin.gradle.kts
 beforeSettings {
     pluginManagement {
         repositories {
+            gradlePluginPortal()
             maven {
                 url = uri(System.getProperty("user.home") + "/.m2/repository")
             }
-            gradlePluginPortal()
         }
     }
 }
