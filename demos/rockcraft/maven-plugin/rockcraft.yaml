@@ -1,4 +1,4 @@
-name: spring-petclinic-jlink-plugin
+name: spring-petclinic-maven-plugin
 version: 0.0.1
 summary: Basic Spring Petclinic
 description: |
