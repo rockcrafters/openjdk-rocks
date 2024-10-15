@@ -1,9 +1,9 @@
 # Description
 
-This directory contains demos of Java rockcraft plugins and extensions. The demos build [Spring Petclinic](https://github.com/spring-projects/spring-petclinic) rock container.
+This directory contains demos of Java rockcraft plugins and extensions. The demos build [Spring Petclinic] rock containers (https://github.com/spring-projects/spring-petclinic).
 
 * [basic](basic) builds without use of plugins. Use chisel slices to install Java runtime.
-* [jlink](jlink) uses Java jlink tool to create Java runtime.
+* [jlink](jlink) uses the Java jlink tool to create Java runtime.
 * [jlink-plugin](jlink-plugin)  install Java runtime using jlink-plugin.
 * [maven-plugin](maven-plugin) uses maven-plugin and jlink-plugin to build the application and install the runtime.
 * [spring-framework-extension](spring-framework-extension) demonstrate Spring Framework rockcraft extension
@@ -29,7 +29,7 @@ cd <sample-directory>
 rockcraft pack
 ```
 
-This will produce a `.rock` file which can be copied to the docker daemon.
+This will produce a `.rock` file to be copied to the docker daemon.
 
 ```
 rockcraft.skopeo copy oci-archive:<file>.rock docker-daemon:<image-name>:<image-tag>
