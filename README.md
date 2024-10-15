@@ -31,7 +31,22 @@ snap install --dangerous --classic *.snap
 git clone https://github.com/rockcrafters/java-rockcraft-plugins
 cd java-rockcraft-plugins
 ./gradew publishToMavenLocal
-mvn install
+```
+
+Add the local maven repository in the init script:
+```
+cat << EOF > ~/.gradle/init.d/rockcraft-plugin.gradle.kts
+beforeSettings {
+    pluginManagement {
+        repositories {
+            maven {
+                url = uri(System.getProperty("user.home") + "/.m2/repository")
+            }
+            gradlePluginPortal()
+        }
+    }
+}
+EOF
 ```
 
 ### Step 3: install Docker

@@ -11,6 +11,24 @@ cd java-rockcraft-plugins
 mvn install
 ```
 
+Add the local maven repository in the init script:
+```
+cat << EOF > ~/.gradle/init.d/rockcraft-plugin.gradle.kts
+beforeSettings {
+    pluginManagement {
+        repositories {
+            maven {
+                url = uri(System.getProperty("user.home") + "/.m2/repository")
+            }
+            gradlePluginPortal()
+        }
+    }
+}
+EOF
+```
+
+Alternatively configure it in your project's `settings.gradle.kts`.
+
 # Using the plugins
 
 Apply the plugin:
