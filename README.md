@@ -52,6 +52,16 @@ EOF
 ### Step 3: install Docker
 
 ```
-sudo apt install docker.io
 sudo snap install docker
+sudo addgroup --system docker
+sudo adduser $USER docker
+newgrp docker
+sudo snap disable docker
+sudo snap enable docker
+```
+
+or 
+
+```
+sudo apt install docker.io
 ```
