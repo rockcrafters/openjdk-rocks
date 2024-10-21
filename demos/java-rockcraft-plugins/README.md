@@ -36,13 +36,13 @@ Apply the plugin:
 **Groovy**
 
     plugins {
-        id 'io.github.rockcrafters.rockcraft' version '0.2.1'
+        id 'io.github.rockcrafters.rockcraft' version '0.2.2'
     }
 
 **Kotlin**
 
     plugins {
-        id("io.github.rockcrafters.rockcraft") version "0.2.1"
+        id("io.github.rockcrafters.rockcraft") version "0.2.2"
     }
 
 
