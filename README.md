@@ -25,7 +25,7 @@ snapcraft
 snap install --dangerous --classic *.snap
 ```
 
-### Step 2: install the Gradle plugin
+### Step 2 (optional): install the Gradle plugin from source
 
 ```
 git clone https://github.com/rockcrafters/java-rockcraft-plugins
