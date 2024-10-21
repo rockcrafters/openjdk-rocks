@@ -52,14 +52,12 @@ parts:
     after:
       - application
     plugin: nil
-    source: https://github.com/vpa1977/chisel-releases
-    source-type: git
-    source-branch: 24.04-openjdk-17
-    override-build: |
-      chisel cut --release ./ --root ${CRAFT_PART_INSTALL} \
-        openjdk-17-jre-headless_standard base-files_base
-      cd ${CRAFT_PART_INSTALL}
+    stage-packages:
+      - openjdk-17-jre-headless_standard
+      - base-files_base
+    override-stage: |
+      craftctl default
+      cd ${CRAFT_STAGE}
       mkdir -p usr/bin
       java_bin=$(find . -name java -type f -executable)
-      ln -s --relative $java_bin usr/bin/java
-      craftctl default
+      ln -sf --relative $java_bin usr/bin/java
