@@ -34,8 +34,6 @@ parts:
     jlink-java-version: 21
     after:
       - application
-    override-build: |
-      # install dependencies: base files and openjdk
-      chisel cut --root ${CRAFT_PART_INSTALL} \
-        base-files_base openjdk-21-jre-headless_standard
-      craftctl default
+    stage-packages: 
+      - base-files_base
+      - openjdk-21-jre-headless_standard

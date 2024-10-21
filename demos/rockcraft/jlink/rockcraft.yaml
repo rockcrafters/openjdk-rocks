@@ -42,12 +42,11 @@ parts:
       - openjdk-17-jdk-headless
     after:
       - application
+    stage-packages:
+      - base-files_base
+      - openjdk-17-jre-headless_standard
     override-build: |
       craftctl default
-      # install dependencies: base files and openjdk
-      chisel cut --root ${CRAFT_PART_INSTALL} \
-        base-files_base openjdk-17-jre-headless_standard
-
       install_root=${CRAFT_PART_INSTALL}/usr/lib/jvm/java-17-openjdk-${CRAFT_ARCH_BUILD_FOR}/
       jar xvf ${CRAFT_STAGE}/jars/*.jar
       deps=$(jdeps --module-path="./BOOT-INF/lib/*" --class-path="./BOOT-INF/lib/*" -q --recursive \
