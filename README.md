@@ -11,7 +11,7 @@ This repository contains demos of Ubuntu OpenJDK-based ROCK containers.
 
 The steps below describe installing all the prerequisites to run samples on the Ubuntu system.
 
-### Step 1: install rockcraft
+### Step 1: Install Rockcraft
 
 Those samples require rockcraft features [not yet merged](https://github.com/canonical/rockcraft/compare/main...vpa1977:rockcraft:experimental-java?expand=1) into main.
 Please install rockcraft from [this branch](https://github.com/vpa1977/rockcraft/tree/experimental-java):
@@ -19,7 +19,7 @@ Please install rockcraft from [this branch](https://github.com/vpa1977/rockcraft
 snap install snapcraft
 git clone -b experimental-java https://github.com/vpa1977/rockcraft
 cd rockcraft
-# ensure that installed version of rockcraft is removed
+# ensure that the installed version of rockcraft is removed
 snap remove rockcraft
 snapcraft
 snap install --dangerous --classic *.snap
@@ -61,7 +61,7 @@ sudo snap disable docker
 sudo snap enable docker
 ```
 
-or 
+or
 
 ```
 sudo apt install docker.io

@@ -13,5 +13,5 @@ docker run spring-petclinic exec /usr/bin/java -jar /jars/spring-petclinic-3.3.0
 
 # Customizing the rock
 
-Teh generated rockcraft.yaml file contains instructions on customizing the rock.
+The generated rockcraft.yaml file contains instructions on customizing the rock.
 [rockcraft.yaml](rockcraft.yaml) in the current directory provides an example of overriding the build step and defining the startup service.

@@ -27,7 +27,7 @@ beforeSettings {
 EOF
 ```
 
-Alternatively configure it in your project's `settings.gradle.kts`.
+Alternatively, configure it in your project's `settings.gradle.kts`.
 
 # Using the plugins
 

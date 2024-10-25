@@ -16,7 +16,7 @@ Please install rockcraft from [this branch](https://github.com/vpa1977/rockcraft
 snap install snapcraft
 git clone -b experimental-java https://github.com/vpa1977/rockcraft
 cd rockcraft
-# ensure that installed version of rockcraft is removed
+# ensure that the installed version of rockcraft is removed
 snap remove rockcraft
 snapcraft
 snap install --dangerous --classic *.snap
